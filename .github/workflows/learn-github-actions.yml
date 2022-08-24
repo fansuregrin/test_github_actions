@@ -6,5 +6,7 @@ jobs:
     container:
       image: archlinux
     steps:
-      - name: check linux kernel version
-        run: uname -r
+      - name: check linux kernel information
+        run: uname -a
+      - name: check pacman's version
+        run: pacman -V 
